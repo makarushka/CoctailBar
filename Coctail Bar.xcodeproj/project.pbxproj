@@ -1,0 +1,830 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01F1C78380D120C18E5AF749 /* Pods_Coctail_Bar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27B82770870D5F3AC77AD9C /* Pods_Coctail_Bar.framework */; };
+		3822A7AE3DEEC3E4FC3BC41E /* Pods_Coctail_BarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37648C91B4DFFB5277BFB16B /* Pods_Coctail_BarTests.framework */; };
+		5B29F23021ECB24C0044B7D2 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B29F22F21ECB24C0044B7D2 /* CategoryCell.swift */; };
+		5B29F23421ECB76B0044B7D2 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B29F23321ECB76B0044B7D2 /* ProductCell.swift */; };
+		5BDD229221EB7C4F00376E1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD229121EB7C4F00376E1E /* AppDelegate.swift */; };
+		5BDD229721EB7C4F00376E1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BDD229521EB7C4F00376E1E /* Main.storyboard */; };
+		5BDD229921EB7C5500376E1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BDD229821EB7C5500376E1E /* Assets.xcassets */; };
+		5BDD229C21EB7C5500376E1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BDD229A21EB7C5500376E1E /* LaunchScreen.storyboard */; };
+		5BDD22A721EB7C5500376E1E /* Coctail_BarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD22A621EB7C5500376E1E /* Coctail_BarTests.swift */; };
+		5BDD22B221EB7C5500376E1E /* Coctail_BarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD22B121EB7C5500376E1E /* Coctail_BarUITests.swift */; };
+		5BDD22C521EB7D1D00376E1E /* BaseCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD22C321EB7D1D00376E1E /* BaseCategory.swift */; };
+		5BDD22C621EB7D1D00376E1E /* DrinkCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD22C421EB7D1D00376E1E /* DrinkCategory.swift */; };
+		5BDD22C921EB7D7D00376E1E /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD22C821EB7D7D00376E1E /* Constant.swift */; };
+		5BDD22CB21EB7DE600376E1E /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD22CA21EB7DE600376E1E /* Api.swift */; };
+		5BDD22CF21EB864900376E1E /* BaseProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD22CD21EB864900376E1E /* BaseProduct.swift */; };
+		5BDD22D021EB864900376E1E /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD22CE21EB864900376E1E /* Drink.swift */; };
+		5BDD22D621EB91E100376E1E /* CategoryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD22D521EB91E100376E1E /* CategoryExtension.swift */; };
+		5BDD22D821EB926900376E1E /* CategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD22D721EB926900376E1E /* CategoryVC.swift */; };
+		5BDD22DA21EB946100376E1E /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD22D921EB946100376E1E /* DataSource.swift */; };
+		7730C803351D45D62277A8C3 /* Pods_Coctail_BarUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCCD71EB0B00CF0DC5397053 /* Pods_Coctail_BarUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5BDD22A321EB7C5500376E1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BDD228621EB7C4F00376E1E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BDD228D21EB7C4F00376E1E;
+			remoteInfo = "Coctail Bar";
+		};
+		5BDD22AE21EB7C5500376E1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BDD228621EB7C4F00376E1E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BDD228D21EB7C4F00376E1E;
+			remoteInfo = "Coctail Bar";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		37648C91B4DFFB5277BFB16B /* Pods_Coctail_BarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coctail_BarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B29F22F21ECB24C0044B7D2 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		5B29F23321ECB76B0044B7D2 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		5BDD228E21EB7C4F00376E1E /* Coctail Bar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coctail Bar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BDD229121EB7C4F00376E1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5BDD229621EB7C4F00376E1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5BDD229821EB7C5500376E1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5BDD229B21EB7C5500376E1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5BDD229D21EB7C5500376E1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BDD22A221EB7C5500376E1E /* Coctail BarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Coctail BarTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BDD22A621EB7C5500376E1E /* Coctail_BarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coctail_BarTests.swift; sourceTree = "<group>"; };
+		5BDD22A821EB7C5500376E1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BDD22AD21EB7C5500376E1E /* Coctail BarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Coctail BarUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BDD22B121EB7C5500376E1E /* Coctail_BarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coctail_BarUITests.swift; sourceTree = "<group>"; };
+		5BDD22B321EB7C5500376E1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BDD22C321EB7D1D00376E1E /* BaseCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCategory.swift; sourceTree = "<group>"; };
+		5BDD22C421EB7D1D00376E1E /* DrinkCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrinkCategory.swift; sourceTree = "<group>"; };
+		5BDD22C821EB7D7D00376E1E /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		5BDD22CA21EB7DE600376E1E /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		5BDD22CD21EB864900376E1E /* BaseProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseProduct.swift; sourceTree = "<group>"; };
+		5BDD22CE21EB864900376E1E /* Drink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
+		5BDD22D521EB91E100376E1E /* CategoryExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryExtension.swift; sourceTree = "<group>"; };
+		5BDD22D721EB926900376E1E /* CategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryVC.swift; sourceTree = "<group>"; };
+		5BDD22D921EB946100376E1E /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		75B067F6EB1FEB18858604A5 /* Pods-Coctail BarUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coctail BarUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Coctail BarUITests/Pods-Coctail BarUITests.release.xcconfig"; sourceTree = "<group>"; };
+		85EE8292C09850706F30AABF /* Pods-Coctail Bar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coctail Bar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Coctail Bar/Pods-Coctail Bar.debug.xcconfig"; sourceTree = "<group>"; };
+		A27B82770870D5F3AC77AD9C /* Pods_Coctail_Bar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coctail_Bar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCCD71EB0B00CF0DC5397053 /* Pods_Coctail_BarUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coctail_BarUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2A7D389A5EB92B5F6EB964D /* Pods-Coctail BarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coctail BarTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Coctail BarTests/Pods-Coctail BarTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D7ED95953FC80268129DBD9D /* Pods-Coctail BarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coctail BarTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Coctail BarTests/Pods-Coctail BarTests.release.xcconfig"; sourceTree = "<group>"; };
+		E39805584EE0FEDEFC6818B4 /* Pods-Coctail BarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coctail BarUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Coctail BarUITests/Pods-Coctail BarUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EEE2ABE2B3BF782B95F0D401 /* Pods-Coctail Bar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coctail Bar.release.xcconfig"; path = "Pods/Target Support Files/Pods-Coctail Bar/Pods-Coctail Bar.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5BDD228B21EB7C4F00376E1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01F1C78380D120C18E5AF749 /* Pods_Coctail_Bar.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BDD229F21EB7C5500376E1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3822A7AE3DEEC3E4FC3BC41E /* Pods_Coctail_BarTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BDD22AA21EB7C5500376E1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7730C803351D45D62277A8C3 /* Pods_Coctail_BarUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0002A06F1002366E990B91B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A27B82770870D5F3AC77AD9C /* Pods_Coctail_Bar.framework */,
+				37648C91B4DFFB5277BFB16B /* Pods_Coctail_BarTests.framework */,
+				BCCD71EB0B00CF0DC5397053 /* Pods_Coctail_BarUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5BDD228521EB7C4E00376E1E = {
+			isa = PBXGroup;
+			children = (
+				5BDD229021EB7C4F00376E1E /* Coctail Bar */,
+				5BDD22A521EB7C5500376E1E /* Coctail BarTests */,
+				5BDD22B021EB7C5500376E1E /* Coctail BarUITests */,
+				5BDD228F21EB7C4F00376E1E /* Products */,
+				7A2ABB41D366160E4F5DFE84 /* Pods */,
+				0002A06F1002366E990B91B2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5BDD228F21EB7C4F00376E1E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5BDD228E21EB7C4F00376E1E /* Coctail Bar.app */,
+				5BDD22A221EB7C5500376E1E /* Coctail BarTests.xctest */,
+				5BDD22AD21EB7C5500376E1E /* Coctail BarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5BDD229021EB7C4F00376E1E /* Coctail Bar */ = {
+			isa = PBXGroup;
+			children = (
+				5BDD22BF21EB7C6A00376E1E /* Classes */,
+				5BDD229121EB7C4F00376E1E /* AppDelegate.swift */,
+				5BDD229521EB7C4F00376E1E /* Main.storyboard */,
+				5BDD229821EB7C5500376E1E /* Assets.xcassets */,
+				5BDD229A21EB7C5500376E1E /* LaunchScreen.storyboard */,
+				5BDD229D21EB7C5500376E1E /* Info.plist */,
+			);
+			path = "Coctail Bar";
+			sourceTree = "<group>";
+		};
+		5BDD22A521EB7C5500376E1E /* Coctail BarTests */ = {
+			isa = PBXGroup;
+			children = (
+				5BDD22A621EB7C5500376E1E /* Coctail_BarTests.swift */,
+				5BDD22A821EB7C5500376E1E /* Info.plist */,
+			);
+			path = "Coctail BarTests";
+			sourceTree = "<group>";
+		};
+		5BDD22B021EB7C5500376E1E /* Coctail BarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5BDD22B121EB7C5500376E1E /* Coctail_BarUITests.swift */,
+				5BDD22B321EB7C5500376E1E /* Info.plist */,
+			);
+			path = "Coctail BarUITests";
+			sourceTree = "<group>";
+		};
+		5BDD22BF21EB7C6A00376E1E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5BDD22D321EB91C900376E1E /* Extension */,
+				5BDD22C021EB7C8800376E1E /* Controllers */,
+				5BDD22C721EB7D6D00376E1E /* Api */,
+				5BDD22C121EB7CAC00376E1E /* Models */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		5BDD22C021EB7C8800376E1E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5BDD22D721EB926900376E1E /* CategoryVC.swift */,
+				5B29F22F21ECB24C0044B7D2 /* CategoryCell.swift */,
+				5B29F23321ECB76B0044B7D2 /* ProductCell.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5BDD22C121EB7CAC00376E1E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5BDD22CC21EB860C00376E1E /* Product */,
+				5BDD22C221EB7D1400376E1E /* Category */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5BDD22C221EB7D1400376E1E /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				5BDD22C421EB7D1D00376E1E /* DrinkCategory.swift */,
+				5BDD22C321EB7D1D00376E1E /* BaseCategory.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		5BDD22C721EB7D6D00376E1E /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				5BDD22C821EB7D7D00376E1E /* Constant.swift */,
+				5BDD22CA21EB7DE600376E1E /* Api.swift */,
+				5BDD22D921EB946100376E1E /* DataSource.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		5BDD22CC21EB860C00376E1E /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				5BDD22CE21EB864900376E1E /* Drink.swift */,
+				5BDD22CD21EB864900376E1E /* BaseProduct.swift */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		5BDD22D321EB91C900376E1E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5BDD22D521EB91E100376E1E /* CategoryExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		7A2ABB41D366160E4F5DFE84 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				85EE8292C09850706F30AABF /* Pods-Coctail Bar.debug.xcconfig */,
+				EEE2ABE2B3BF782B95F0D401 /* Pods-Coctail Bar.release.xcconfig */,
+				D2A7D389A5EB92B5F6EB964D /* Pods-Coctail BarTests.debug.xcconfig */,
+				D7ED95953FC80268129DBD9D /* Pods-Coctail BarTests.release.xcconfig */,
+				E39805584EE0FEDEFC6818B4 /* Pods-Coctail BarUITests.debug.xcconfig */,
+				75B067F6EB1FEB18858604A5 /* Pods-Coctail BarUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5BDD228D21EB7C4F00376E1E /* Coctail Bar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BDD22B621EB7C5500376E1E /* Build configuration list for PBXNativeTarget "Coctail Bar" */;
+			buildPhases = (
+				4B4C7D65DC78B8782472632D /* [CP] Check Pods Manifest.lock */,
+				5BDD228A21EB7C4F00376E1E /* Sources */,
+				5BDD228B21EB7C4F00376E1E /* Frameworks */,
+				5BDD228C21EB7C4F00376E1E /* Resources */,
+				C94E4BF4C27A850A07964C65 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Coctail Bar";
+			productName = "Coctail Bar";
+			productReference = 5BDD228E21EB7C4F00376E1E /* Coctail Bar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5BDD22A121EB7C5500376E1E /* Coctail BarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BDD22B921EB7C5500376E1E /* Build configuration list for PBXNativeTarget "Coctail BarTests" */;
+			buildPhases = (
+				6512149F797C820293FB729C /* [CP] Check Pods Manifest.lock */,
+				5BDD229E21EB7C5500376E1E /* Sources */,
+				5BDD229F21EB7C5500376E1E /* Frameworks */,
+				5BDD22A021EB7C5500376E1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5BDD22A421EB7C5500376E1E /* PBXTargetDependency */,
+			);
+			name = "Coctail BarTests";
+			productName = "Coctail BarTests";
+			productReference = 5BDD22A221EB7C5500376E1E /* Coctail BarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5BDD22AC21EB7C5500376E1E /* Coctail BarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BDD22BC21EB7C5500376E1E /* Build configuration list for PBXNativeTarget "Coctail BarUITests" */;
+			buildPhases = (
+				BBDE52A94F6C9A95FE05F73C /* [CP] Check Pods Manifest.lock */,
+				5BDD22A921EB7C5500376E1E /* Sources */,
+				5BDD22AA21EB7C5500376E1E /* Frameworks */,
+				5BDD22AB21EB7C5500376E1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5BDD22AF21EB7C5500376E1E /* PBXTargetDependency */,
+			);
+			name = "Coctail BarUITests";
+			productName = "Coctail BarUITests";
+			productReference = 5BDD22AD21EB7C5500376E1E /* Coctail BarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5BDD228621EB7C4F00376E1E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Yuriy;
+				TargetAttributes = {
+					5BDD228D21EB7C4F00376E1E = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					5BDD22A121EB7C5500376E1E = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 5BDD228D21EB7C4F00376E1E;
+					};
+					5BDD22AC21EB7C5500376E1E = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 5BDD228D21EB7C4F00376E1E;
+					};
+				};
+			};
+			buildConfigurationList = 5BDD228921EB7C4F00376E1E /* Build configuration list for PBXProject "Coctail Bar" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5BDD228521EB7C4E00376E1E;
+			productRefGroup = 5BDD228F21EB7C4F00376E1E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5BDD228D21EB7C4F00376E1E /* Coctail Bar */,
+				5BDD22A121EB7C5500376E1E /* Coctail BarTests */,
+				5BDD22AC21EB7C5500376E1E /* Coctail BarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5BDD228C21EB7C4F00376E1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BDD229C21EB7C5500376E1E /* LaunchScreen.storyboard in Resources */,
+				5BDD229921EB7C5500376E1E /* Assets.xcassets in Resources */,
+				5BDD229721EB7C4F00376E1E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BDD22A021EB7C5500376E1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BDD22AB21EB7C5500376E1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B4C7D65DC78B8782472632D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Coctail Bar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6512149F797C820293FB729C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Coctail BarTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBDE52A94F6C9A95FE05F73C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Coctail BarUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C94E4BF4C27A850A07964C65 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Coctail Bar/Pods-Coctail Bar-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Coctail Bar/Pods-Coctail Bar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5BDD228A21EB7C4F00376E1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BDD229221EB7C4F00376E1E /* AppDelegate.swift in Sources */,
+				5BDD22D021EB864900376E1E /* Drink.swift in Sources */,
+				5BDD22D621EB91E100376E1E /* CategoryExtension.swift in Sources */,
+				5BDD22D821EB926900376E1E /* CategoryVC.swift in Sources */,
+				5B29F23421ECB76B0044B7D2 /* ProductCell.swift in Sources */,
+				5BDD22C921EB7D7D00376E1E /* Constant.swift in Sources */,
+				5BDD22C621EB7D1D00376E1E /* DrinkCategory.swift in Sources */,
+				5BDD22CB21EB7DE600376E1E /* Api.swift in Sources */,
+				5BDD22CF21EB864900376E1E /* BaseProduct.swift in Sources */,
+				5B29F23021ECB24C0044B7D2 /* CategoryCell.swift in Sources */,
+				5BDD22DA21EB946100376E1E /* DataSource.swift in Sources */,
+				5BDD22C521EB7D1D00376E1E /* BaseCategory.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BDD229E21EB7C5500376E1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BDD22A721EB7C5500376E1E /* Coctail_BarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BDD22A921EB7C5500376E1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BDD22B221EB7C5500376E1E /* Coctail_BarUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5BDD22A421EB7C5500376E1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5BDD228D21EB7C4F00376E1E /* Coctail Bar */;
+			targetProxy = 5BDD22A321EB7C5500376E1E /* PBXContainerItemProxy */;
+		};
+		5BDD22AF21EB7C5500376E1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5BDD228D21EB7C4F00376E1E /* Coctail Bar */;
+			targetProxy = 5BDD22AE21EB7C5500376E1E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5BDD229521EB7C4F00376E1E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BDD229621EB7C4F00376E1E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5BDD229A21EB7C5500376E1E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BDD229B21EB7C5500376E1E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5BDD22B421EB7C5500376E1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5BDD22B521EB7C5500376E1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5BDD22B721EB7C5500376E1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85EE8292C09850706F30AABF /* Pods-Coctail Bar.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 44YJQTRYW4;
+				INFOPLIST_FILE = "Coctail Bar/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Bar.Coctail-Bar";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5BDD22B821EB7C5500376E1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEE2ABE2B3BF782B95F0D401 /* Pods-Coctail Bar.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 44YJQTRYW4;
+				INFOPLIST_FILE = "Coctail Bar/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Bar.Coctail-Bar";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5BDD22BA21EB7C5500376E1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2A7D389A5EB92B5F6EB964D /* Pods-Coctail BarTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 44YJQTRYW4;
+				INFOPLIST_FILE = "Coctail BarTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Bar.Coctail-BarTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coctail Bar.app/Coctail Bar";
+			};
+			name = Debug;
+		};
+		5BDD22BB21EB7C5500376E1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7ED95953FC80268129DBD9D /* Pods-Coctail BarTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 44YJQTRYW4;
+				INFOPLIST_FILE = "Coctail BarTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Bar.Coctail-BarTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coctail Bar.app/Coctail Bar";
+			};
+			name = Release;
+		};
+		5BDD22BD21EB7C5500376E1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E39805584EE0FEDEFC6818B4 /* Pods-Coctail BarUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 44YJQTRYW4;
+				INFOPLIST_FILE = "Coctail BarUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Bar.Coctail-BarUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Coctail Bar";
+			};
+			name = Debug;
+		};
+		5BDD22BE21EB7C5500376E1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75B067F6EB1FEB18858604A5 /* Pods-Coctail BarUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 44YJQTRYW4;
+				INFOPLIST_FILE = "Coctail BarUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Bar.Coctail-BarUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Coctail Bar";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5BDD228921EB7C4F00376E1E /* Build configuration list for PBXProject "Coctail Bar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BDD22B421EB7C5500376E1E /* Debug */,
+				5BDD22B521EB7C5500376E1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BDD22B621EB7C5500376E1E /* Build configuration list for PBXNativeTarget "Coctail Bar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BDD22B721EB7C5500376E1E /* Debug */,
+				5BDD22B821EB7C5500376E1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BDD22B921EB7C5500376E1E /* Build configuration list for PBXNativeTarget "Coctail BarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BDD22BA21EB7C5500376E1E /* Debug */,
+				5BDD22BB21EB7C5500376E1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BDD22BC21EB7C5500376E1E /* Build configuration list for PBXNativeTarget "Coctail BarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BDD22BD21EB7C5500376E1E /* Debug */,
+				5BDD22BE21EB7C5500376E1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5BDD228621EB7C4F00376E1E /* Project object */;
+}
