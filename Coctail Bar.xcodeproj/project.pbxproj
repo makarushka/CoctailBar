@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		01F1C78380D120C18E5AF749 /* Pods_Coctail_Bar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27B82770870D5F3AC77AD9C /* Pods_Coctail_Bar.framework */; };
 		3822A7AE3DEEC3E4FC3BC41E /* Pods_Coctail_BarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37648C91B4DFFB5277BFB16B /* Pods_Coctail_BarTests.framework */; };
-		5B29F23021ECB24C0044B7D2 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B29F22F21ECB24C0044B7D2 /* CategoryCell.swift */; };
 		5B29F23421ECB76B0044B7D2 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B29F23321ECB76B0044B7D2 /* ProductCell.swift */; };
 		5BDD229221EB7C4F00376E1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD229121EB7C4F00376E1E /* AppDelegate.swift */; };
 		5BDD229721EB7C4F00376E1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BDD229521EB7C4F00376E1E /* Main.storyboard */; };
@@ -26,6 +25,8 @@
 		5BDD22D621EB91E100376E1E /* CategoryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD22D521EB91E100376E1E /* CategoryExtension.swift */; };
 		5BDD22D821EB926900376E1E /* CategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD22D721EB926900376E1E /* CategoryVC.swift */; };
 		5BDD22DA21EB946100376E1E /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD22D921EB946100376E1E /* DataSource.swift */; };
+		5BFE6DAC21EE8C6F006E770D /* FilterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFE6DAB21EE8C6F006E770D /* FilterVC.swift */; };
+		5BFE6DAF21EE8F9E006E770D /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFE6DAE21EE8F9E006E770D /* CategoryCell.swift */; };
 		7730C803351D45D62277A8C3 /* Pods_Coctail_BarUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCCD71EB0B00CF0DC5397053 /* Pods_Coctail_BarUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,7 +49,6 @@
 
 /* Begin PBXFileReference section */
 		37648C91B4DFFB5277BFB16B /* Pods_Coctail_BarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coctail_BarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B29F22F21ECB24C0044B7D2 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		5B29F23321ECB76B0044B7D2 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		5BDD228E21EB7C4F00376E1E /* Coctail Bar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coctail Bar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BDD229121EB7C4F00376E1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +71,8 @@
 		5BDD22D521EB91E100376E1E /* CategoryExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryExtension.swift; sourceTree = "<group>"; };
 		5BDD22D721EB926900376E1E /* CategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryVC.swift; sourceTree = "<group>"; };
 		5BDD22D921EB946100376E1E /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		5BFE6DAB21EE8C6F006E770D /* FilterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterVC.swift; sourceTree = "<group>"; };
+		5BFE6DAE21EE8F9E006E770D /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		75B067F6EB1FEB18858604A5 /* Pods-Coctail BarUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coctail BarUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Coctail BarUITests/Pods-Coctail BarUITests.release.xcconfig"; sourceTree = "<group>"; };
 		85EE8292C09850706F30AABF /* Pods-Coctail Bar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coctail Bar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Coctail Bar/Pods-Coctail Bar.debug.xcconfig"; sourceTree = "<group>"; };
 		A27B82770870D5F3AC77AD9C /* Pods_Coctail_Bar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coctail_Bar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -187,8 +189,9 @@
 			isa = PBXGroup;
 			children = (
 				5BDD22D721EB926900376E1E /* CategoryVC.swift */,
-				5B29F22F21ECB24C0044B7D2 /* CategoryCell.swift */,
 				5B29F23321ECB76B0044B7D2 /* ProductCell.swift */,
+				5BFE6DAB21EE8C6F006E770D /* FilterVC.swift */,
+				5BFE6DAE21EE8F9E006E770D /* CategoryCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -485,10 +488,11 @@
 				5BDD22D821EB926900376E1E /* CategoryVC.swift in Sources */,
 				5B29F23421ECB76B0044B7D2 /* ProductCell.swift in Sources */,
 				5BDD22C921EB7D7D00376E1E /* Constant.swift in Sources */,
+				5BFE6DAC21EE8C6F006E770D /* FilterVC.swift in Sources */,
 				5BDD22C621EB7D1D00376E1E /* DrinkCategory.swift in Sources */,
 				5BDD22CB21EB7DE600376E1E /* Api.swift in Sources */,
 				5BDD22CF21EB864900376E1E /* BaseProduct.swift in Sources */,
-				5B29F23021ECB24C0044B7D2 /* CategoryCell.swift in Sources */,
+				5BFE6DAF21EE8F9E006E770D /* CategoryCell.swift in Sources */,
 				5BDD22DA21EB946100376E1E /* DataSource.swift in Sources */,
 				5BDD22C521EB7D1D00376E1E /* BaseCategory.swift in Sources */,
 			);

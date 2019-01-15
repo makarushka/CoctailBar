@@ -15,13 +15,12 @@ class CategoryCell: UITableViewCell, UICollectionViewDataSource {
     var drinkAll: [Drink]?
     @IBOutlet weak var collectionProduct: UICollectionView!
     @IBOutlet weak var titleCategory: UILabel!
-    @IBOutlet weak var indicator: UIActivityIndicatorView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
     }
-
+    
     func config() {
         self.collectionProduct.dataSource = self
         self.collectionProduct.reloadData()
@@ -34,20 +33,21 @@ class CategoryCell: UITableViewCell, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellProduct", for: indexPath) as? ProductCell else {return UICollectionViewCell()}
-        
+        let progress = MBProgressHUD.showAdded(to: cell.imageProduct, animated: true)
         let drink = drinkAll![indexPath.row]
-            DispatchQueue.global().async {
-                Api.shared.requestImage(drink: drink) { image in
-                    DispatchQueue.main.async {
-                        cell.imageProduct.image = image
-                    }
-                    
+        DispatchQueue.global().async {
+            Api.shared.requestImage(drink: drink) { image in
+                DispatchQueue.main.async {
+                    cell.imageProduct.image = image
+                    progress.hide(animated: true)
                 }
+                
             }
+        }
         cell.titleProduct.text = drink.strDrink
         return cell
     }
     
     
-
+    
 }

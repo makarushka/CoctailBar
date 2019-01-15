@@ -14,6 +14,7 @@ class ProductCell: UICollectionViewCell {
     
     override func prepareForReuse() {
         imageProduct.image = nil
+        titleProduct.text = nil
         super.prepareForReuse()
     }
     

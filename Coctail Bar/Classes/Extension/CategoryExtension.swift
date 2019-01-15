@@ -20,7 +20,7 @@ extension CategoryVC {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 227.0
     }
-    
+    //FIXME: //Нужно решить проблему пере-использования ячеек
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? CategoryCell else {return UITableViewCell()}
         for firstCategory in DataSource.shared.data.enumerated() {

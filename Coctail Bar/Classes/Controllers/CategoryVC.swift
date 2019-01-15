@@ -24,11 +24,7 @@ class CategoryVC: UITableViewController, MBProgressHUDDelegate {
             self.tableView.reloadData()
             progress.hide(animated: true)
         })
-        
-        
     }
-    
-    
 }
     
 
