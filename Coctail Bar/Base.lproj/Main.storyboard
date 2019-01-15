@@ -93,7 +93,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="iwM-pU-KKK">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="dmj-0l-zbW">
+                        <barButtonItem key="rightBarButtonItem" title="Filter" id="dmj-0l-zbW">
                             <connections>
                                 <segue destination="zBQ-O7-YeY" kind="presentation" modalPresentationStyle="overCurrentContext" id="ii4-rd-JOJ"/>
                             </connections>
@@ -139,7 +139,6 @@
                                         <state key="normal" title="Close"/>
                                         <connections>
                                             <action selector="back:" destination="zBQ-O7-YeY" eventType="touchUpInside" id="vYk-FW-CmI"/>
-                                            <action selector="dismiss:" destination="zBQ-O7-YeY" eventType="touchUpInside" id="7mh-HH-dIG"/>
                                         </connections>
                                     </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Как пример фильтра, в данном случае фильтрует категории где меньше 10 коктелей." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zEc-k3-rZS">
@@ -176,7 +175,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TFd-0Y-lmc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2132" y="130"/>
+            <point key="canvasLocation" x="2131.875" y="129.92957746478874"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gE0-Oc-VVZ">
