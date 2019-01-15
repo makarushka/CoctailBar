@@ -35,11 +35,16 @@ class CategoryCell: UITableViewCell, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellProduct", for: indexPath) as? ProductCell else {return UICollectionViewCell()}
         
-        cell.drink = drinkAll![indexPath.row]
-        cell.configure {
-            print("Загружено")
-        }
-        
+        let drink = drinkAll![indexPath.row]
+            DispatchQueue.global().async {
+                Api.shared.requestImage(drink: drink) { image in
+                    DispatchQueue.main.async {
+                        cell.imageProduct.image = image
+                    }
+                    
+                }
+            }
+        cell.titleProduct.text = drink.strDrink
         return cell
     }
     

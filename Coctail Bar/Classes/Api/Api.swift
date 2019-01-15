@@ -17,7 +17,7 @@
             request(url).response { (response) in
                 start()
                 guard let data = response.data else {return}
-                DispatchQueue.global().sync {
+                DispatchQueue.main.async {
                     do {
                         let category = try JSONDecoder().decode(BaseCategory.self, from: data)
                         
